@@ -49,7 +49,12 @@ void getlog(int logs) {
         std::cout << 1900 + time_b -> tm_year << "年 " << 1 + time_b -> tm_mon << "月 " << time_b -> tm_mday << "日 ";
         std::string rdt;
         xxx >> rdt;
-        if ( rdt == "a+" ) { std::cout << "
+        if ( rdt == "a+" ) { std::cout << "获得零花钱 "; }
+        else { std::cout << "消费零花钱 "; }
+        xxx >> rdt;
+        std::cout << rdt << "元" << std::endl;
+        xx++;
+        if ( xx == logs ) { break; }
     }
 }
 int main() {
